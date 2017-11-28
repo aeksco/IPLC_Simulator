@@ -1,0 +1,3 @@
+# Report
+
+Provide a write-up that summarizes your implementation. Describe how each team member contributed to the overall project. Please note, that while not all team members need to be involved in the  nal project write-up process, it is expected that ALL team members participate and contribute to the design and implementation process. This part of the project document should come  rst. As mentioned in the syllabus, 15% of each student’s grade will be determined by their peers.
