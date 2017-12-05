@@ -186,6 +186,7 @@ void iplc_sim_LRU_replace_on_miss(int index, int tag)
 {
     /* You must implement this function */
     // TODO - We must implement this
+    printf("iplc_sim_LRU_replace_on_miss\n");
 }
 
 /*
@@ -196,6 +197,7 @@ void iplc_sim_LRU_update_on_hit(int index, int assoc_entry)
 {
     /* You must implement this function */
     // TODO - We must implement this
+    printf("iplc_sim_LRU_update_on_hit\n");
 }
 
 /*
@@ -212,6 +214,7 @@ int iplc_sim_trap_address(unsigned int address)
 
     // Call the appropriate function for a miss or hit
     // TODO - We must implement this
+    printf("iplc_sim_trap_address\n");
 
     /* expects you to return 1 for hit, 0 for miss */
     return hit;
@@ -299,21 +302,32 @@ void iplc_sim_push_pipeline_stage()
     /* 2. Check for BRANCH and correct/incorrect Branch Prediction */
     if (pipeline[DECODE].itype == BRANCH) {
         int branch_taken = 0;
+        // TODO - we must implement this
+        printf("iplc_sim_push_pipeline_stage - 2 - pipeline[DECODE].itype == BRANCH\n");
     }
 
     /* 3. Check for LW delays due to use in ALU stage and if data hit/miss
      *    add delay cycles if needed.
      */
     if (pipeline[MEM].itype == LW) {
+        // TODO - we must implement this
+        printf("iplc_sim_push_pipeline_stage - 3 - pipeline[MEM].itype == LW\n");
         int inserted_nop = 0;
     }
 
     /* 4. Check for SW mem acess and data miss .. add delay cycles if needed */
     if (pipeline[MEM].itype == SW) {
+        // TODO - we must implement this
+        printf("iplc_sim_push_pipeline_stage - 4 - pipeline[MEM].itype == SW\n");
     }
 
     /* 5. Increment pipe_cycles 1 cycle for normal processing */
+    // TODO - we must implement this
+    printf("iplc_sim_push_pipeline_stage - 5 - Increment pipe_cycles 1 cycle for normal processing\n");
+
     /* 6. push stages thru MEM->WB, ALU->MEM, DECODE->ALU, FETCH->ALU */
+    // TODO - we must implement this
+    printf("iplc_sim_push_pipeline_stage - 6 - push stages thru MEM->WB, ALU->MEM, DECODE->ALU, FETCH->ALU\n");
 
     // 7. This is a give'me -- Reset the FETCH stage to NOP via bezero */
     bzero(&(pipeline[FETCH]), sizeof(pipeline_t));
@@ -337,40 +351,53 @@ void iplc_sim_process_pipeline_rtype(char *instruction, int dest_reg, int reg1, 
     pipeline[FETCH].stage.rtype.dest_reg = dest_reg;
 }
 
-// TODO - We must implement this
+// TODO - we must DOCUMENT this
 void iplc_sim_process_pipeline_lw(int dest_reg, int base_reg, unsigned int data_address)
 {
     /* You must implement this function */
+    // TODO - we must implement this
+    printf("iplc_sim_process_pipeline_lw\n");
+
 }
 
-// TODO - We must implement this
+// TODO - We must DOCUMENT this
 void iplc_sim_process_pipeline_sw(int src_reg, int base_reg, unsigned int data_address)
 {
     /* You must implement this function */
+    // TODO - we must implement this
+    printf("iplc_sim_process_pipeline_sw\n");
 }
 
-// TODO - We must implement this
+// TODO - We must DOCUMENT this
 void iplc_sim_process_pipeline_branch(int reg1, int reg2)
 {
     /* You must implement this function */
+    // TODO - we must implement this
+    printf("iplc_sim_process_pipeline_branch\n");
 }
 
-// TODO - We must implement this
+// TODO - We must DOCUMENT this
 void iplc_sim_process_pipeline_jump(char *instruction)
 {
     /* You must implement this function */
+    // TODO - we must implement this
+    printf("iplc_sim_process_pipeline_jump\n");
 }
 
-// TODO - We must implement this
+// TODO - We must DOCUMENT this
 void iplc_sim_process_pipeline_syscall()
 {
     /* You must implement this function */
+    // TODO - we must implement this
+    printf("iplc_sim_process_pipeline_syscall\n");
 }
 
-// TODO - We must implement this
+// TODO - We must DOCUMENT this
 void iplc_sim_process_pipeline_nop()
 {
     /* You must implement this function */
+    // TODO - we must implement this
+    printf("iplc_sim_process_pipeline_nop\n");
 }
 
 /************************************************************************************************/
