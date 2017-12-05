@@ -5,7 +5,6 @@ IPLC Simulator for CSCI 2500
 - Alexander Schwartzberg
 - Nitesh Dagli
 - Khalil Fleming
-- Michelle Lehner
 
 #### TODOs:
 
